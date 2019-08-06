@@ -14,12 +14,20 @@ namespace CLRemover
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Pro_Delete_Click(object sender, RoutedEventArgs e)
         {
             var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             var fullPath = path + "\\ZYTO5\\CloudLicense";
             File.Delete(fullPath);
-            //label.Visibility = Visibility.Visible;
+            zytoProLabel.Visibility = Visibility.Visible;
+        }
+
+        private void Compass_Delete_Click(object sender, RoutedEventArgs e)
+        {
+            var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var fullPath = path + "\\ZYTOCompass2\\CloudLicense";
+            File.Delete(fullPath);
+            ZytoCompasLabel.Visibility = Visibility.Visible;
         }
     }
 }

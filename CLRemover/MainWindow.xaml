@@ -8,9 +8,9 @@
         Title="Fix Tool" Height="500" Width="500"
         Background="#4A73A2">
     
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Stretch">
+    <Grid VerticalAlignment="Center" >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1.6*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
@@ -20,14 +20,28 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!--Zyto 5 Cloud License Label-->
-            <Label Content="Zyto Pro Cloud License: "/>
-            <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Button Style="{StaticResource mainButton}" Content="Fix it!" Click="Button_Click" FontSize="20" />
+        <StackPanel Orientation="Horizontal" Margin="15">
+            <Image Source="/Images/Compass5.png" Width="50"/>
+            <Image Source="/Images/balance.png" Width="50"/>
+            <Image Source="/Images/select.png" Width="50"/>
+            <Image Source="/Images/elite.png" Width="50"/>
+            <Image Source="/Images/evox.png" Width="50"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="15 0" Height="2" Background="{StaticResource BackgroundVeryLightBrush}"/>
+
+
+        <StackPanel Margin="15 0" Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Button Style="{StaticResource mainButton}" Width="80" Content="Fix" Click="Pro_Delete_Click" FontSize="20" />
                 <Label Margin="0 20" x:Name="zytoProLabel" Content="Done!" FontSize="18" Visibility="Hidden"/>
             </StackPanel>
-        <Label Content="Compass Cloud License: " Grid.Row="1"/>
-            <StackPanel Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Button  Content="Fix it!" Click="Button_Click" FontSize="20" />
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center">
+            <Image Source="/Images/Compass2.png" Width="50"/>
+        </StackPanel>
+
+        <StackPanel  Margin="15 0" Grid.Column="1" Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Style="{StaticResource mainButton}" Width="80" Content="Fix" Click="Compass_Delete_Click" FontSize="20" />
                 <Label Margin="0 20" x:Name="ZytoCompasLabel" Content="Done!" FontSize="18" Visibility="Hidden"/>
             </StackPanel>
     </Grid>

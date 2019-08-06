@@ -15,7 +15,7 @@
     </Style>
 
     <Style TargetType="{x:Type Button}" x:Key="mainButton" BasedOn="{StaticResource BaseButton}">
-        <Setter Property="Margin" Value="0 15"/>
+        <Setter Property="Margin" Value="0 20"/>
         <Setter Property="Background" Value="{StaticResource WordOrangeBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundLightBrush}"/>
 
@@ -25,7 +25,7 @@
                     <Border x:Name="border" 
                             BorderBrush="{TemplateBinding BorderBrush}" 
                             Padding="{TemplateBinding Padding}" 
-                            CornerRadius="10"
+                            CornerRadius="5"
                             Background="{TemplateBinding Background}">
                         <Grid>
                             <TextBlock Text="{TemplateBinding Content}"
@@ -58,7 +58,6 @@
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
-
 
                     </ControlTemplate.Triggers>
 
