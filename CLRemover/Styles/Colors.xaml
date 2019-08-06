@@ -1,0 +1,51 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:CLRemover">
+    
+    <Color x:Key="BackgroundLight">#efefef</Color>
+    <SolidColorBrush x:Key="BackgroundLightBrush">#efefef</SolidColorBrush>
+
+    <Color x:Key="DarkGrey">#919191</Color>
+    <SolidColorBrush x:Key="DarkGreyBrush">#919191</SolidColorBrush>
+
+    <Color x:Key="BackgroundGrey">#ecf0f1</Color>
+    <SolidColorBrush x:Key="BackgroundGreyBrush">#ecf0f1</SolidColorBrush>
+
+    <Color x:Key="WordBlue">#3099c5</Color>
+    <SolidColorBrush x:Key="WordBlueBrush" Color="{StaticResource WordBlue}" />
+
+    <Color x:Key="WordOrange">#ffa800</Color>
+    <SolidColorBrush x:Key="WordOrangeBrush" Color="{StaticResource WordOrange}" />
+
+    <Color x:Key="BackgroundVeryLight">#fafafa</Color>
+    <SolidColorBrush x:Key="BackgroundVeryLightBrush">#fafafa</SolidColorBrush>
+
+    <Color x:Key="ForegroundMain">#686868</Color>
+    <SolidColorBrush x:Key="ForegroundMainBrush">#686868</SolidColorBrush>
+
+    <Color x:Key="ForegroundVeryDark">#2E2E2E</Color>
+    <SolidColorBrush x:Key="ForegroundVeryDarkBrush">#2E2E2E</SolidColorBrush>
+
+    <Color x:Key="ForegroundLight">#ffffff</Color>
+    <SolidColorBrush x:Key="ForegroundLightBrush">#ffffff</SolidColorBrush>
+
+    <Color x:Key="TextColor">#787878</Color>
+    <SolidColorBrush x:Key="TextColorBrush">#787878</SolidColorBrush>
+
+    <Color x:Key="Header">#458FBB</Color>
+    <SolidColorBrush x:Key="HeaderBrush">#458FBB</SolidColorBrush>
+
+    <Color x:Key="MenuColor">#0E4F79</Color>
+    <SolidColorBrush x:Key="MenuColorBrush">#0E4F79</SolidColorBrush>
+
+    <Color x:Key="MenuTextColor">#E8F5FF</Color>
+    <SolidColorBrush x:Key="MenuTextColorBrush">#E8F5FF</SolidColorBrush>
+
+    <Color x:Key="HighLightColor">#f6b93b</Color>
+    <SolidColorBrush x:Key="HighLightColorBrush">#f6b93b</SolidColorBrush>
+
+    <Color x:Key="BackgroundColor">#4390bc</Color>
+    <SolidColorBrush x:Key="BackgroundColorBrush">#4390bc</SolidColorBrush>
+
+    <SolidColorBrush x:Key="ButtonMouseOverBrush">#60a3bc</SolidColorBrush>
+</ResourceDictionary>
