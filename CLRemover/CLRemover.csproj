@@ -124,21 +124,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Compass2.png">
+    <Resource Include="Resources\Compass2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\balance.png" />
-    <Resource Include="Images\Compass5.png" />
+    <Resource Include="Resources\balance.png" />
+    <Resource Include="Resources\Compass5.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\elite.png" />
-    <Resource Include="Images\evox.png" />
-    <Resource Include="Images\select.png" />
+    <Resource Include="Resources\elite.png" />
+    <Resource Include="Resources\evox.png" />
+    <Resource Include="Resources\select.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\logo.png" />
+    <Resource Include="Resources\logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\main_Icon.ico">

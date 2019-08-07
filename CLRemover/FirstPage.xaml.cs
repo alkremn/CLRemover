@@ -37,7 +37,7 @@ namespace CLRemover
             if (Directory.Exists(path))
             {
                 File.Delete(path + "\\CloudLicense");
-                this.NavigationService.Navigate(new SecondPage(window));
+                NavigationService.Navigate(new SecondPage(window));
             }
             else
             {
@@ -53,7 +53,7 @@ namespace CLRemover
             if (Directory.Exists(path))
             {
                 File.Delete(path + "\\CloudLicense");
-                this.NavigationService.Navigate(new SecondPage(window));
+                NavigationService.Navigate(new SecondPage(window));
             }
             else
             {
