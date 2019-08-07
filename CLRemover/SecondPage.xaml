@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Title="Fix Tool" Height="500" Width="520"
-        Background="#5D8FBE">
+        Background="#4A73A2">
     
     <Grid >
         
