@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Windows;
-using System.Windows.Navigation;
+﻿using System.Windows;
 
 namespace CLRemover
 {
