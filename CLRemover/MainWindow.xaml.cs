@@ -16,20 +16,26 @@ namespace CLRemover
 
         private void Pro_Delete_Click(object sender, RoutedEventArgs e)
         {
-            var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var fullPath = path + "\\ZYTO5\\CloudLicense";
-            File.Delete(fullPath);
-            zytoProLabel.Visibility = Visibility.Visible;
-            linkLabel.Visibility = Visibility.Visible;
+            var appPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var path = appPath + "\\ZYTO5";
+            if (Directory.Exists(path))
+            {
+                File.Delete(path + "\\CloudLicense");
+                zytoProLabel.Visibility = Visibility.Visible;
+                linkLabel.Visibility = Visibility.Visible;
+            }
         }
 
         private void Compass_Delete_Click(object sender, RoutedEventArgs e)
         {
-            var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var fullPath = path + "\\ZYTOCompass2\\CloudLicense";
-            File.Delete(fullPath);
-            ZytoCompasLabel.Visibility = Visibility.Visible;
-            linkLabel.Visibility = Visibility.Visible;
+            var appPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var path = appPath + "\\ZYTOCompass2";
+            if (Directory.Exists(path))
+            {
+                File.Delete(path + "\\CloudLicense");
+                ZytoCompasLabel.Visibility = Visibility.Visible;
+                linkLabel.Visibility = Visibility.Visible;
+            }
         }
 
         private void Url_Button_Click(object sender, RoutedEventArgs e)
