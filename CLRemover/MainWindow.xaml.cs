@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Windows;
+using System.Windows.Navigation;
 
 namespace CLRemover
 {
@@ -14,33 +15,9 @@ namespace CLRemover
             InitializeComponent();
         }
 
-        private void Pro_Delete_Click(object sender, RoutedEventArgs e)
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            var appPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var path = appPath + "\\ZYTO5";
-            if (Directory.Exists(path))
-            {
-                File.Delete(path + "\\CloudLicense");
-                zytoProLabel.Visibility = Visibility.Visible;
-                linkLabel.Visibility = Visibility.Visible;
-            }
-        }
-
-        private void Compass_Delete_Click(object sender, RoutedEventArgs e)
-        {
-            var appPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var path = appPath + "\\ZYTOCompass2";
-            if (Directory.Exists(path))
-            {
-                File.Delete(path + "\\CloudLicense");
-                ZytoCompasLabel.Visibility = Visibility.Visible;
-                linkLabel.Visibility = Visibility.Visible;
-            }
-        }
-
-        private void Url_Button_Click(object sender, RoutedEventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://account.zyto.com/portal/accounts");
+            mainFrame.NavigationService.Navigate(new FirstPage());
         }
     }
 }
