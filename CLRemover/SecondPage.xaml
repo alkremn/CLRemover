@@ -21,7 +21,7 @@
             VerticalAlignment="Top"
             HorizontalAlignment="Left"
             Source="/Images/logo.png"
-            Width="100"/>
+            Width="120"/>
 
 
         <StackPanel Orientation="Horizontal" 
@@ -39,6 +39,7 @@
                 Grid.Row="2" >
             <TextBlock 
                 HorizontalAlignment="Center"
+                Padding="0 20 0 0"
                 Text="Please release your license from online dashboard" 
                 Foreground="{StaticResource BackgroundLightBrush}"
                 VerticalAlignment="Center"

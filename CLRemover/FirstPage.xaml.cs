@@ -23,9 +23,11 @@ namespace CLRemover
     {
         private static string PRO = "Zyto Pro";
         private static string COMPASS = "Compass";
-        public FirstPage()
+        private Window window;
+        public FirstPage(Window window)
         {
             InitializeComponent();
+            this.window = window;
         }
 
         private void Pro_Delete_Click(object sender, RoutedEventArgs e)
@@ -35,7 +37,7 @@ namespace CLRemover
             if (Directory.Exists(path))
             {
                 File.Delete(path + "\\CloudLicense");
-                this.NavigationService.Navigate(new SecondPage());
+                this.NavigationService.Navigate(new SecondPage(window));
             }
             else
             {
@@ -51,7 +53,7 @@ namespace CLRemover
             if (Directory.Exists(path))
             {
                 File.Delete(path + "\\CloudLicense");
-                this.NavigationService.Navigate(new SecondPage());
+                this.NavigationService.Navigate(new SecondPage(window));
             }
             else
             {

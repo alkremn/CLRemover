@@ -11,19 +11,20 @@
 
     <Grid >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1.6*" />
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1.6*" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="1.2*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.3*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.4*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!--Zyto 5 Cloud License Label-->
-        <StackPanel Orientation="Horizontal" Margin="15" Grid.Row="1">
+        <StackPanel Orientation="Horizontal" Margin="15" Width="250" Grid.Row="2" Grid.Column="1">
             <Image Source="/Images/Compass5.png" Width="50"/>
             <Image Source="/Images/balance.png" Width="50"/>
             <Image Source="/Images/select.png" Width="50"/>
@@ -36,35 +37,36 @@
             VerticalAlignment="Top"
             HorizontalAlignment="Left"
             Source="/Images/logo.png"
-            Width="100"/>
-        <!--<TextBlock Text="64bit error" 
-                   Style="{StaticResource MainLabel}" 
-                   FontWeight="Bold"
-                   Margin="10 20" 
-                   VerticalAlignment="Top"/>-->
+            Width="120"/>
+        <TextBlock Text="Choose your system:"
+                   Grid.Row="1"
+                   Style="{StaticResource MainLabel}"
+                   FontSize="18"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"/>
 
-        <Grid Grid.Row="2" 
+        <Grid Grid.Row="3" 
               Grid.ColumnSpan="2" 
               Margin="15 0" 
               Height="2" 
               Background="{StaticResource BackgroundVeryLightBrush}"/>
 
         <StackPanel Margin="15 0" 
-                    Grid.Column="2"
-                    Grid.Row="1" 
+                    Grid.Row="2" 
                     Orientation="Horizontal" 
                     VerticalAlignment="Center" 
-                    HorizontalAlignment="Left">
+                    HorizontalAlignment="Center">
 
             <Button Style="{StaticResource mainButton}" 
-                    Width="80" 
-                    Content="Fix" 
+                    Content="Zyto Pro" 
+                    Width="100"
                     Click="Pro_Delete_Click" 
                     FontSize="20" />
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" 
-                    Grid.Row="3" 
+                    Grid.Row="4"
+                    Grid.Column="1"
                     HorizontalAlignment="Center" 
                     VerticalAlignment="Top">
             <Image Source="/Images/Compass2.png" 
@@ -73,14 +75,13 @@
         </StackPanel>
 
         <StackPanel  Margin="15 0" 
-                     Grid.Column="1" 
-                     Grid.Row="3" 
+                     Grid.Row="4" 
                      Orientation="Horizontal" 
                      VerticalAlignment="Top" 
-                     HorizontalAlignment="Left">
+                     HorizontalAlignment="Center">
             <Button Style="{StaticResource mainButton}" 
-                    Width="80" 
-                    Content="Fix" 
+                    Content="Compass" 
+                    Width="100"
                     Click="Compass_Delete_Click" 
                     FontSize="20" />
         </StackPanel>
@@ -89,7 +90,7 @@
             HorizontalAlignment="Center"
             x:Name="errorLabel"
             Visibility="Hidden"
-            Grid.Row="4"
+            Grid.Row="5"
                 Grid.ColumnSpan="2"
                 Orientation="Horizontal">
             <TextBlock 
