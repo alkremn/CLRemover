@@ -17,13 +17,13 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="0.5*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.8*"/>
             <RowDefinition Height="0.4*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.4*"/>
         </Grid.RowDefinitions>
         <!--Zyto 5 Cloud License Label-->
         <StackPanel Orientation="Horizontal" Width="347" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1">
