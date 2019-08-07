@@ -12,7 +12,7 @@
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="1.6*" />
+            <ColumnDefinition Width="2.5*" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -24,12 +24,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!--Zyto 5 Cloud License Label-->
-        <StackPanel Orientation="Horizontal" Margin="15" Width="250" Grid.Row="2" Grid.Column="1">
-            <Image Source="/Resources/Compass5.png" Width="50"/>
-            <Image Source="/Resources/balance.png" Width="50"/>
-            <Image Source="/Resources/select.png" Width="50"/>
-            <Image Source="/Resources/elite.png" Width="50"/>
-            <Image Source="/Resources/evox.png" Width="50"/>
+        <StackPanel Orientation="Horizontal" Width="350" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1">
+            <Image Source="/Resources/Compass5.png" Width="67"/>
+            <Image Source="/Resources/balance.png" Width="70"/>
+            <Image Source="/Resources/select.png" Width="70"/>
+            <Image Source="/Resources/elite.png" Width="70"/>
+            <Image Source="/Resources/evox.png" Width="70"/>
         </StackPanel>
 
         <Image 
@@ -37,13 +37,16 @@
             VerticalAlignment="Top"
             HorizontalAlignment="Left"
             Source="/Resources/logo.png"
+            Grid.ColumnSpan="2"
             Width="120"/>
         <TextBlock Text="Choose your system:"
                    Grid.Row="1"
+                   Grid.ColumnSpan="2"
                    Style="{StaticResource MainLabel}"
-                   FontSize="18"
+                   Padding="10 0"
+                   FontSize="20"
                    HorizontalAlignment="Left"
-                   VerticalAlignment="Center"/>
+                   VerticalAlignment="Top"/>
 
         <Grid Grid.Row="3" 
               Grid.ColumnSpan="2" 
@@ -70,8 +73,8 @@
                     HorizontalAlignment="Center" 
                     VerticalAlignment="Top">
             <Image Source="/Resources/Compass2.png" 
-                   Width="50" 
-                   Margin="0 15"/>
+                   Width="70" 
+                   Margin="0 10"/>
         </StackPanel>
 
         <StackPanel  Margin="15 0" 
