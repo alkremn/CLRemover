@@ -140,5 +140,8 @@
     <Resource Include="Images\evox.png" />
     <Resource Include="Images\select.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
