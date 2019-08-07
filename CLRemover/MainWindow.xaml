@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Loaded="Window_Loaded"
         mc:Ignorable="d"
-        Title="CLRemover" Height="500" Width="520"
+        Title="64bit Fixer" Height="500" Width="520"
         ResizeMode="NoResize"
         >
     <Grid>

@@ -56,7 +56,7 @@
               Height="2" 
               Background="{StaticResource BackgroundVeryLightBrush}"/>
 
-        <StackPanel Margin="15 0" 
+        <StackPanel Margin="10 0" 
                     Grid.Row="2" 
                     Orientation="Horizontal" 
                     VerticalAlignment="Center" 
@@ -64,9 +64,9 @@
 
             <Button Style="{StaticResource mainButton}" 
                     Content="Zyto Pro" 
-                    Width="100"
+                    Width="120"
                     Click="Pro_Delete_Click" 
-                    FontSize="20" />
+                    FontSize="18" />
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" 
@@ -79,16 +79,16 @@
                    Margin="0 10"/>
         </StackPanel>
 
-        <StackPanel  Margin="15 0" 
+        <StackPanel  Margin="10 0" 
                      Grid.Row="4" 
                      Orientation="Horizontal" 
                      VerticalAlignment="Top" 
                      HorizontalAlignment="Center">
             <Button Style="{StaticResource mainButton}" 
-                    Content="Compass" 
-                    Width="100"
+                    Content="Compass 2.0" 
+                    Width="120"
                     Click="Compass_Delete_Click" 
-                    FontSize="20" />
+                    FontSize="18" />
         </StackPanel>
         <StackPanel 
             VerticalAlignment="Top"
