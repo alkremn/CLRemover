@@ -8,7 +8,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="520"
       Title="FirstPage"
-      Background="#4A73A2">
+      Background="#5D8FBE">
 
     <Grid >
         <Grid.ColumnDefinitions>
