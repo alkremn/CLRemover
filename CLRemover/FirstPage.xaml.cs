@@ -11,6 +11,7 @@ namespace CLRemover
     /// </summary>
     public partial class FirstPage : Page
     {
+        private static string VERSION = "v 1.2";
         private static string PRO = "Zyto Pro";
         private static string COMPASS = "Compass";
         private Window window;
@@ -52,5 +53,9 @@ namespace CLRemover
             }
         }
 
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            versionLabel.Text = VERSION;
+        }
     }
 }
