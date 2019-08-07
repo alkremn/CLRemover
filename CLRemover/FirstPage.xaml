@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CLRemover"
       mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="500"
+      d:DesignHeight="500" d:DesignWidth="520"
       Title="FirstPage"
       Background="#4A73A2">
 
@@ -16,15 +16,15 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.8*"/>
-            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.5*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="0.4*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <!--Zyto 5 Cloud License Label-->
-        <StackPanel Orientation="Horizontal" Width="350" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1">
+        <StackPanel Orientation="Horizontal" Width="347" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1">
             <Image Source="/Resources/Compass5.png" Width="67"/>
             <Image Source="/Resources/balance.png" Width="70"/>
             <Image Source="/Resources/select.png" Width="70"/>
@@ -38,12 +38,12 @@
             HorizontalAlignment="Left"
             Source="/Resources/logo.png"
             Grid.ColumnSpan="2"
-            Width="120"/>
+            Width="140"/>
         <TextBlock Text="Choose your system:"
                    Grid.Row="1"
                    Grid.ColumnSpan="2"
                    Style="{StaticResource MainLabel}"
-                   Padding="10 0"
+                   Padding="15 0"
                    FontSize="20"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"/>
