@@ -14,7 +14,7 @@ namespace CLRemover
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            mainFrame.NavigationService.Navigate(new FirstPage(this));
+            mainFrame.NavigationService.Navigate(new MainPage(this));
         }
     }
 }

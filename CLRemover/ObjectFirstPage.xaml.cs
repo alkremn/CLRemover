@@ -9,13 +9,12 @@ namespace CLRemover
     /// <summary>
     /// Interaction logic for FirstPage.xaml
     /// </summary>
-    public partial class FirstPage : Page
+    public partial class ObjectFirstPage : Page
     {
-        private static string VERSION = "v 1.2";
-        private static string PRO = "Zyto Pro";
-        private static string COMPASS = "Compass";
-        private Window window;
-        public FirstPage(Window window)
+        private static readonly string PRO = "Zyto Pro";
+        private static readonly string COMPASS = "Compass";
+        private readonly Window window;
+        public ObjectFirstPage(Window window)
         {
             InitializeComponent();
             this.window = window;
@@ -27,8 +26,8 @@ namespace CLRemover
             var path = appPath + "\\ZYTO5";
             if (Directory.Exists(path))
             {
-                File.Delete(path + "\\CloudLicense");
-                NavigationService.Navigate(new SecondPage(window));
+                File.Delete(path + "\\ProCloudNotifications.txt");
+                NavigationService.Navigate(new ObjectSecondPage(window));
             }
             else
             {
@@ -43,8 +42,8 @@ namespace CLRemover
             var path = appPath + "\\ZYTOCompass2";
             if (Directory.Exists(path))
             {
-                File.Delete(path + "\\CloudLicense");
-                NavigationService.Navigate(new SecondPage(window));
+                File.Delete(path + "\\CompassCloudNotifications.txt");
+                NavigationService.Navigate(new ObjectSecondPage(window));
             }
             else
             {
@@ -53,9 +52,5 @@ namespace CLRemover
             }
         }
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-            versionLabel.Text = VERSION;
-        }
     }
 }

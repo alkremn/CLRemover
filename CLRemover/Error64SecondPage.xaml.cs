@@ -6,10 +6,10 @@ namespace CLRemover
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class SecondPage : Page
+    public partial class Error64SecondPage : Page
     {
-        private Window window;
-        public SecondPage(Window window)
+        private readonly Window window;
+        public Error64SecondPage(Window window)
         {
             InitializeComponent();
             this.window = window;
