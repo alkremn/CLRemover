@@ -3,7 +3,7 @@ using System.Timers;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace CLRemover
+namespace Fixer
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

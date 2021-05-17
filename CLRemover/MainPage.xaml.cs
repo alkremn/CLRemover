@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CLRemover
+namespace Fixer
 {
     /// <summary>
     /// Interaction logic for MainPage.xaml
@@ -22,7 +22,7 @@ namespace CLRemover
     public partial class MainPage : Page
     {
 
-        private static readonly string VERSION = "v 1.3";
+        private static readonly string VERSION = "v 1.4";
 
         private readonly Window window;
         public MainPage(Window window)

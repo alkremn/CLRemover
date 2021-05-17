@@ -1,4 +1,4 @@
-﻿<Page x:Class="CLRemover.MainPage"
+﻿<Page x:Class="Fixer.MainPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -21,8 +21,8 @@
                 <RowDefinition Height="0.4*"/>
             </Grid.RowDefinitions>
             
-            <!--64 Bit error button-->
-            <Button Content="64 bit error" 
+            <!--Base 64 error button-->
+            <Button Content="Base64 error" 
                     Style="{StaticResource mainButton}" 
                     Margin="30"
                     Click="Error64_Button_Click"

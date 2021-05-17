@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace CLRemover
+namespace Fixer
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

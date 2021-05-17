@@ -1,11 +1,11 @@
-﻿<Window x:Class="CLRemover.MainWindow"
+﻿<Window x:Class="Fixer.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Loaded="Window_Loaded"
         mc:Ignorable="d"
-        Title="64bit Fixer" Height="500" Width="520"
+        Title="Fixer" Height="500" Width="520"
         ResizeMode="NoResize"
         >
     <Grid>
